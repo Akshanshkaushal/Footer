@@ -1,5 +1,5 @@
 .footer {
-    background-color: #f5f5f5;
+    background-color: #eff1f4;
     color: #333;
     padding: 20px;
     font-family: Arial, sans-serif;
@@ -16,7 +16,7 @@
   }
 
   .footer-column ul li {
-    margin-bottom: 10px; /* Adjust the value to set the desired gap between list items */
+    margin-bottom: 20px; /* Adjust the value to set the desired gap between list items */
     transition: color 0.3s ease; /* Add a smooth color transition effect */
   }
 
@@ -60,6 +60,8 @@
     min-width: 200px;
     margin-right: 20px;
   }
+
+  
   
   .footer-social {
     margin-top: 10px;
@@ -84,10 +86,7 @@
   display: flex;
   justify-content: space-between;
 }
-
-.footer-column {
-  flex: 1;
-}
+ 
 
 .social-icons {
   list-style: none;
