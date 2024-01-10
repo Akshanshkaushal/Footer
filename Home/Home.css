@@ -1,0 +1,99 @@
+.container {
+    display: grid;
+    width: 900px; 
+    height: 600px;
+    grid-template-columns: 1fr 1fr 300px; /* Increase the width of the sidebar */
+    grid-template-rows: 80px 1fr 1fr 100px;
+    grid-gap: 1rem;
+    grid-template-areas:
+        "header header header"
+        "content-1 content-1 sidebar"
+        "content-2 content-3 sidebar"
+        "footer footer footer";
+
+    background-size: cover; /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+    position: relative;
+}
+
+.header {
+    color: #171717 !important;
+    font-size: 2rem !important;
+    background-color: transparent !important; /* Remove background color */
+    border-radius: 0 !important; /* Set border radius to zero */
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.content-1 {
+    grid-area: content-1;
+}
+
+.content-2 {
+    grid-area: content-2;
+}
+
+.content-3 {
+    grid-area: content-3;
+}
+
+.footer {
+    grid-area: footer;
+    grid-row: 4 / 5;
+    grid-column: 1 / 4;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.item {
+    background-color: #1EAAFC;
+    color: #ffffff;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.sidebar ,
+.content-1,
+.content-2,
+.content-3 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeA7ud1v0RnZT6xiW7rJuqaKJihzFLIJ0L0jbWsUZGNA&s');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;}
+
+.content-1:hover,
+.content-2:hover,
+.content-3:hover,
+.footer:hover {
+    background-size: 110%; /* Increase background size on hover */
+}
+
+.page-heading {
+    text-align: center;
+    color: #ffffff;
+    background-color: #1EAAFC;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
